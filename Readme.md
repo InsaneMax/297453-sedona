@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Максим](https://up.htmlacademy.ru/htmlcss/16/user/297453).
-* Наставник: `Елена Валеева`. (https://htmlacademy.ru/profile/id232403)
+* Наставник: [Елена Валеева](https://htmlacademy.ru/profile/id232403)
 
 ---
 
