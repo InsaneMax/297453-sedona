@@ -97,7 +97,12 @@ h2 {
 .map {
 	background-image: url("../img/img-1200/map.jpg");
 	width: 1200px;
-	height: 472px;
+	height: 593px;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-around;
 }
 
 .hashtag a {
@@ -105,4 +110,117 @@ h2 {
 	line-height: 26px;
 	text-decoration: none;
 	text-transform: uppercase;
+	color: #000000;
 }
+
+.social-media ul  {
+	list-style: none;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+
+.copyright {
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+/* .copyright span {
+	vertical-align: middle;
+} */
+
+.academy-footer {
+	width: 113px;
+	height: 39px;
+	padding-left: 5px;
+}
+
+
+
+
+
+.filters {
+	background-color: #b8b5bf;
+	background-image: url("../img/img-1200/filter-bg.jpg");
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+.filters h2 {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.filters-menu {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.filters-menu b {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+
+.search-list {
+	list-style: none;
+	
+}
+
+.search-list a {
+	text-decoration: none;
+	border-bottom: 1px dotted #81b3d2;
+	color: #d5d5d5;
+}
+
+.search-list a:active/* , 
+ .search-list .price   */{
+	color: #81b3d2;
+	border: none;
+}
+
+.hotels h2 {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.details-btn {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #81b3d2;
+	padding: 7px 16px 7px 16px;
+}
+
+.check-btn {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #766357;
+	padding: 7px 16px 7px 16px;
+}
+
+.rating p {
+	background-color: #f2f2f2;
+	padding: 7px 16px 7px 16px;
+}
+
+.amara .rating   {
+	background-image: url("../img/img-1200/stars-4.png");
+	background-repeat: no-repeat;
+}
+
+.desert .rating   {
+	background-image: url("../img/img-1200/stars-3.png");
+	background-repeat: no-repeat;
+}
+
+.diablo .rating  {
+	background-image: url("../img/img-1200/stars-2.png");
+	background-repeat: no-repeat;
+}
+
+
