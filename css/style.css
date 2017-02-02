@@ -27,6 +27,9 @@ h2 {
 	font-size: 14px;
 	line-height: 26px;
 	list-style: none;
+	padding: 5px 58px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .header-nav a {
@@ -38,21 +41,35 @@ h2 {
 .header-image {
 	background-color: #b8b5bf;
     background-image: url("../img/img-1200/background-photo.jpg");
+	margin-top: -40px;
 }
 
+/* .main-text {
+	
+}
+ */
 .advantage-list {
 	background-color: #ffffff;
 	color: #000000;
 	text-align: center;
 }
 
-.feature-item {
+.feature-item-1,
+.feature-item-2 {
 	background-color: #81b3d2;
 	color:  #ffffff;
 	width: 290px;
 	text-align: center;
 	padding: 55px;
 }
+
+/* .feature-item-1 {
+	float:left;
+}
+
+.feature-item-2 {
+	float: right;
+} */
 
 .feature-img-1 {
 	background-image: url("../img/img-1200/image-1.jpg");
