@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона </title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 		<div class="container">
@@ -12,7 +14,8 @@
 				<ul class="header-nav">
 					<li><a href="index.html">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
-					<li class="header-logo"><img src="img/img-1200/logo-full.png" alt="Логотип сайта"></li>
+					<li class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
+					height="70"></a></li>
 					<li><a href="#">Карта штата</a></li>
 					<li><a href="hotels.html">Гостиницы</a></li>
 				</ul>
@@ -63,7 +66,7 @@
 				</ul>
 			</div>
 			<div class="hotels">
-				<article class="hotel amara">
+				<article class="hotel amara clearfix">
 					<section class="picture">
 						<a href="#"><img src="img/img-1200/hot-1.jpg" class="hotel-image" width="135px" height="90px"></a>
 					</section>
@@ -77,7 +80,7 @@
 						<p>Рейтинг: 8,5</p>
 					</section>
 				</article>
-				<article class="hotel desert">
+				<article class="hotel desert clearfix">
 					<section class="picture">
 						<a href="#"><img src="img/img-1200/hot-2.jpg" class="hotel-image" width="135px" height="90px"></a>
 					</section>
@@ -91,7 +94,7 @@
 						<p>Рейтинг: 8,9</p>
 					</section>
 				</article>
-				<article class="hotel diablo">
+				<article class="hotel diablo clearfix">
 					<section class="picture">
 						<a href="#"><img src="img/img-1200/hot-3.jpg" class="hotel-image" width="135px" height="90px"></a>
 					</section>
@@ -108,17 +111,17 @@
 			</div>
 		</main>
 		<footer class="main-footer">
-			<div class="hashtag">
+			<div class="hashtag column">
 				<a href="https://www.instagram.com/explore/tags/sedona/" target="_blank">#VIZITSEDONA</a>
 			</div>
-			<div class="social-media">
+			<div class="social-media column">
 				<ul>
-					<li class="tvit"><a href="#" title="Twitter"><img src="img/img-1200/twitter.png"></a></li>
-					<li class="fb"><a href="#" title="Facebook"><img src="img/img-1200/facebook.png"></a></li>
-					<li class="youtube"><a href="#" title="YouTube"><img src="img/img-1200/youtube.png"></a></li>
+					<li class="tvit column"><a href="#" title="Twitter"><img src="img/img-1200/twitter.png"></a></li>
+					<li class="fb column"><a href="#" title="Facebook"><img src="img/img-1200/facebook.png"></a></li>
+					<li class="youtube column"><a href="#" title="YouTube"><img src="img/img-1200/youtube.png"></a></li>
 				</ul>
 			</div>
-			<div class="copyright">
+			<div class="copyright column">
 				website by<a href=""><img class="academy-footer" src="img/img-1200/academy.png" alt="Лого академии"></a>
 			</div>
 		</footer>
