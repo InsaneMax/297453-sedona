@@ -16,25 +16,41 @@ h1 {
 	line-height: 26px;
 }
 
+.title-text {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 h2 {
 	font-size: 21px;
+	text-transform: uppercase;
 }
 .main-menu {
 	background-color: #ffffff;
+	position: relative;
 }
 
 .header-nav {
 	margin: 0;
+	padding: 0;
 }
+
 
 .header-nav li {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
 	list-style: none;
-	padding: 5px 65px;
+	padding: 15px 58px;
 	display: inline-block;
 	vertical-align: top;
+	text-transform: uppercase;
+}
+
+.nav-menu-right {
+	margin-left: 364px;
 }
 
 .header-nav a {
@@ -42,12 +58,17 @@ h2 {
 	color: #000000;
 }
 
+.header-logo {
+	position: absolute;
+	top: 0;
+	left: 537px;
+	
+}
 
 .header-image {
 	background-color: #cee6ea;
     background: url("../img/img-1200/bg-white.png")bottom no-repeat,
 				url("../img/img-1200/background-photo.jpg") no-repeat;
-	margin-top: -40px;
 	padding: 130px 0 100px 0;
 	text-align: center;
 }
@@ -67,7 +88,7 @@ h2 {
 	color:  #ffffff;
 	width: 290px;
 	text-align: center;
-	padding: 54px 55px 54px 55px;
+	padding: 53px 55px 53px 55px;
 }
 
 .feature-item-1 {
@@ -137,7 +158,7 @@ h2 {
 .best-advantage {
 	text-align: center;
 	line-height: 24px;
-	padding: 70px 280px 120px 280px;
+	padding: 70px 280px 140px 280px;
 	clear: both;
 }
 
@@ -151,9 +172,41 @@ h2 {
 	background-image: url("../img/img-1200/map.jpg");
 	width: 1200px;
 	height: 593px;
+	position: relative;
+}
+
+.booking {
+	background-color: #ffffff;
+	width: 460px;
+}
+
+.booking h2 {
+	background-color: #766357;
+	color: #ffffff;
+	padding: 10px 20px;
+	margin-top: 0;
+	margin-bottom: 45px;
+}
+
+.booking input[type=submit] {
+	width: 100px;
+	padding: 10px 180px 10px 150px;
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-align: right;
+	cursor: pointer;
+    margin-left: 50px; 
+	margin-top: 30px;
 }
 
 .main-footer {
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	bottom: 0px;
+	/* left: 50px; */
+	/* padding-top: 20px;
+	padding-bottom: 20px; */
+	padding: 25px 39px 25px 39px;
 }
 
 .column {
@@ -203,7 +256,6 @@ h2 {
     display: table;
     clear: both;
 }
-
 
 
 

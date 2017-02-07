@@ -14,11 +14,14 @@
 				<ul class="header-nav">
 					<li><a href="index.html">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
-					<li class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
-					height="70"></a></li>
-					<li><a href="#">Карта штата</a></li>
+					<!-- <li class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
+					height="70"></a></li> -->
+					<li class="nav-menu-right"><a href="#">Карта штата</a></li>
 					<li><a href="hotels.html">Гостиницы</a></li>
 				</ul>
+				<div class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
+					height="70"></a>
+				</div>
 			</nav>
 		</header>
 		<main>
@@ -87,28 +90,35 @@
 				и мы покажим лучшие предложения гостиниц в Седоне</p>
 			</div>
 		</main>
-			<div class="map">
-				<form>
-					<input>
-					<input>
-					<input>
+		<div class="map">
+				<form class="booking" method="get" action="#">
+					<h2>Поиск гостиниц в Седоне</h2>
+					<label for="arrival">Дата заезда: <label>
+					<input type="text" name="arrival-date" id="arrival"><br>
+					<label for="departure">Дата выезда: <label>
+					<input type="text" name="departure date" id="departure"><br>
+					<label for="adults">Взрослые: </label>
+					<input type="text" name="adults" id="adults">
+					<label for="kids">Дети: </label>
+					<input type="text" name="kids" id="kids"><br>
+					<input type="submit" value="Найти">
 				</form>
-			</div>
-		<footer class="main-footer">
-			<div class="hashtag column">
-				<a href="https://www.instagram.com/explore/tags/sedona/" target="_blank">#VIZITSEDONA</a>
-			</div>
-			<div class="social-media column">
-				<ul>
-					<li class="tvit column"><a href="#" title="Twitter"><img src="img/img-1200/twitter.png"></a></li>
-					<li class="fb column"><a href="#" title="Facebook"><img src="img/img-1200/facebook.png"></a></li>
-					<li class="youtube column"><a href="#" title="YouTube"><img src="img/img-1200/youtube.png"></a></li>
-				</ul>
-			</div>
-			<div class="copyright column">
-				website by<a href=""><img class="academy-footer" src="img/img-1200/academy.png" alt="Лого академии"></a>
-			</div>
-		</footer>
+			<footer class="main-footer">
+				<div class="hashtag column">
+					<a href="https://www.instagram.com/explore/tags/sedona/" target="_blank">#VIZITSEDONA</a>
+				</div>
+				<div class="social-media column">
+					<ul>
+						<li class="tvit column"><a href="#" title="Twitter"><img src="img/img-1200/twitter.png"></a></li>
+						<li class="fb column"><a href="#" title="Facebook"><img src="img/img-1200/facebook.png"></a></li>
+						<li class="youtube column"><a href="#" title="YouTube"><img src="img/img-1200/youtube.png"></a></li>
+					</ul>
+				</div>
+				<div class="copyright column">
+					website by<a href=""><img class="academy-footer" src="img/img-1200/academy.png" alt="Лого академии"></a>
+				</div>
+			</footer>
+		</div>
 	</div>
   </body>
 </html>
