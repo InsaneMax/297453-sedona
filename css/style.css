@@ -43,14 +43,10 @@ h2 {
 	font-weight: bold;
 	line-height: 26px;
 	list-style: none;
-	padding: 15px 58px;
+	padding: 15px 69px;
 	display: inline-block;
 	vertical-align: top;
 	text-transform: uppercase;
-}
-
-.nav-menu-right {
-	margin-left: 364px;
 }
 
 .header-nav a {
@@ -58,12 +54,23 @@ h2 {
 	color: #000000;
 }
 
-.header-logo {
-	position: absolute;
-	top: 0;
-	left: 537px;
-	
+.header-nav a:hover {
+	color: #81b3d2;
 }
+
+.header-nav a:active{
+	color:#b2b2b2;
+}
+
+.header-nav .header-logo {
+	height: 46px;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: relative;
+	top: 0px;
+	left: 0px; 
+
+} 
 
 .header-image {
 	background-color: #cee6ea;
@@ -89,6 +96,7 @@ h2 {
 	width: 290px;
 	text-align: center;
 	padding: 53px 55px 54px 55px;
+	text-transform: uppercase;
 	/* max-height: 148px;  */
 }
 
@@ -126,6 +134,7 @@ h2 {
 	color: #000000;
 	width: 290px;
 	text-align: center;
+	text-transform: uppercase;
 	padding: 160px 55px 55px 55px;
 	
 }
@@ -155,6 +164,7 @@ h2 {
 .feature-item-grey {
 	background-color: #eeeeee;
 	width: 290px;
+	text-transform: uppercase;
 	text-align: center;
 	padding: 55px;
 	float: left;
@@ -169,14 +179,14 @@ h2 {
 	position: relative;
 	text-align: center;
 	line-height: 24px;
-	padding: 70px 280px 140px 280px;
+	text-transform: uppercase;
+	padding: 55px 280px 140px 280px;
 	clear: both;
 }
 
 
 .best-advantage strong {
 	font-size: 30px;
-	text-transform: uppercase;
 }
 
 .map {
@@ -189,9 +199,9 @@ h2 {
 
 .booking {
 	position: absolute;
-	bottom: -200px;
+	bottom: -300px;
 	left: 310px;
-	background-color: #ffffff;
+	background-color: #ffffcf;
 	width: 460px;
 	z-index: 2;
 	padding: 55px;
@@ -251,6 +261,10 @@ h2 {
 	text-decoration: none;
 	display: inline-block;
 }
+
+/* .social-media a:hover {
+	background-color: #669ec0;
+} */
 
 .copyright {
 	font-size: 14px;
