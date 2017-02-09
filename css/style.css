@@ -135,7 +135,7 @@ h2 {
 	width: 290px;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 160px 55px 55px 55px;
+	padding: 160px 55px 85px 55px;
 	
 }
 
@@ -166,7 +166,7 @@ h2 {
 	width: 290px;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 55px;
+	padding: 50px 55px 60px 55px;
 	float: left;
 }
 
@@ -229,37 +229,51 @@ h2 {
 
 .main-footer {
 	background-color: rgba(255, 255, 255, 0.9);
+	width: 1054px;
 	position: absolute;
 	bottom: 0px;
 	/* left: 50px; */
-	/* padding-top: 20px;
-	padding-bottom: 20px; */
-	padding: 25px 39px 25px 39px;
+	/* padding: 25px 73px 25px 73px; */
+	padding: 30px 73px 25px 73px;
 }
 
 .column {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 
 .hashtag a {
+	width: 140px;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000000;
-	margin: 0 200px 0 100px;
+	padding: 0 50px 0 50px;
+	/* margin: 0 200px 0 100px; */
 
 }
 
 .social-media ul  {
 	list-style: none;
+	width: 150px;
+	padding: 0 120px 0 120px;
+	margin: 0;
+	margin-right: 90px;
+	margin-left: 90px;
+}
+
+.social-media li {
+	height: 50px;
 }
 
 .social-media a {
+	height: 50px;
 	text-decoration: none;
 	display: inline-block;
+	
 }
 
 /* .social-media a:hover {
@@ -267,15 +281,19 @@ h2 {
 } */
 
 .copyright {
+	width: 200px;
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
-	margin: 0 100px 0 200px;
+	padding: 0 20px 0 20px;
+	/* margin: 0 100px 0 200px; */
 }
 
-/* .copyright span {
-	vertical-align: middle;
-} */
+.middle {
+	display: inline-block;
+	vertical-align: 13px;;
+}
+
 
 .academy-footer {
 	width: 113px;
