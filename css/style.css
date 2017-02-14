@@ -10,6 +10,11 @@
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	box-shadow: 0 0 20px 0 #dedede;
+}
+.wrapper {
+	width: 1056px;
+	margin: 0 auto;
 }
 
 h1 {
@@ -69,7 +74,7 @@ h2 {
 	padding-bottom: 0;
 	position: relative;
 	top: 0px;
-	left: 0px; 
+	left: -5px; 
 
 } 
 
@@ -214,6 +219,7 @@ h2 {
 
 .booking-title {
 	position: absolute;
+	z-index: 2;
 	bottom: 0;
 	left: 312px;
 	width: 400px;
@@ -243,10 +249,12 @@ h2 {
 	width: 460px;
 	z-index: 2;
 	padding: 60px;
+	box-shadow: 0 5px 30px 0 #9190a5;
+	z-index: 1;
 }
 
 .booking input {
-	width: 330px;
+	width: 348px;
 	background-color: #f2f2f2;
 	border: none;
 	font-size: 14px;
@@ -256,8 +264,15 @@ h2 {
 	color: #000000;
 	text-transform: uppercase;
 	padding: 5px;
-	margin: 10px;
+	margin-bottom: 30px;
 }
+
+.input-space {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 
 #kids,
 #adults {
@@ -283,7 +298,7 @@ h2 {
 	text-align: center;
 	cursor: pointer;
 	margin: 0;
-	margin-top: 45px;
+	margin-top: 25px;
 }
 
 .booking .submit:hover {
@@ -442,6 +457,9 @@ h2 {
 	padding: 20px;
 }
 
+.filters form {
+	text-transform: uppercase;
+}
 
 .filters h2 {
 	font-size: 16px;
@@ -449,19 +467,73 @@ h2 {
 }
 
 .filters-menu {
+	margin-bottom: 0;
+	background-color: #ffffff;
 	font-size: 12px;
 	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .filters-menu b {
+	display: inline-block;
 	font-size: 21px;
 	line-height: 26px;
+	margin-top: 35px;
 }
 
+.filters-checkbox {
+	display: inline-block;
+	margin-right: 100px;
+}
+
+.filters-checkbox h2 {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.filters-checkbox label {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.filters-checkbox label:last-child {
+	margin: 0;
+}
+
+.filters-price {
+	display: inline-block;
+	margin-left:330px;
+	padding: 0 40px;
+	vertical-align: top;
+}
+
+.filters-price h2 {
+	margin: 0;
+}
 
 .search-list {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 20px;
 	list-style: none;
-	
+}
+
+.search-list li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.search-list .sorting {
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-right: 40px;
+}
+
+.search-list .price {
+	margin: 0;
 }
 
 .search-list a {
@@ -470,10 +542,18 @@ h2 {
 	color: #d5d5d5;
 }
 
-.search-list a:active/* , 
- .search-list .price   */{
+.search-list a:hover{
 	color: #81b3d2;
+}
+
+.search-list a:active{
+	color: #000;
 	border: none;
+}
+
+
+.hotels {
+	background-color: #ffffff;
 }
 
 .hotels article {
@@ -490,35 +570,106 @@ h2 {
 	line-height: 26px;
 }
 
+.hotels .picture {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .picture {
 	float: left;
-	margin-right: 20px;
+	margin-right: 30px;
 }
+
+.picture a {
+	display: block;
+}
+
 .about-hotel {
 	float: left;
+}
+
+.hot-link {
+	display: block;
+	text-decoration: none;
+	color: #000;
 }
 
 .rating {
 	float: right;
 }
 
+.rating span {
+	background-color: #f2f2f2;
+	padding: 7px 16px 7px 16px;
+}
+
+article .hotel {
+	padding-bottom: 15px;
+}
+
 .details-btn {
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #81b3d2;
 	padding: 7px 16px 7px 16px;
 }
 
+.details-btn:hover {
+	background-color: #669ec0;
+	color:  #ffffff;
+}
+
+.details-btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .check-btn {
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #766357;
 	padding: 7px 16px 7px 16px;
 }
 
-.rating p {
-	background-color: #f2f2f2;
-	padding: 7px 16px 7px 16px;
+.check-btn:hover{
+	background-color: #604e43;
+	color: #ffffff;
+}
+
+.check-btn:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+
+.hot-name {
+	text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 5px;
+	font-size: 21px;
+    line-height: 26px;
+}
+
+.hot-type {
+	text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 7px;
+	font-size: 14px;
+    line-height: 21px;
+}
+
+.hot-name:hover {
+	color: #81b3d2;
+}
+
+.hot-name:active {
+	color: rgba(0, 0, 0, 0.3) ;
 }
 
 .amara .rating   {
