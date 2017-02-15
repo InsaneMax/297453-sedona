@@ -81,8 +81,8 @@ h2 {
 .header-image {
 	background-color: #cee6ea;
     background: url("../img/img-1200/bg-white.png")bottom no-repeat,
-				url("../img/img-1200/background-photo.jpg") no-repeat;
-	padding: 130px 0 100px 0;
+				url("../img/img-1200/background-photo.jpg") 0 -56.5px no-repeat;
+	padding: 76px 0 74px 0;
 	text-align: center;
 }
 
@@ -95,7 +95,7 @@ h2 {
 }
 
 .title-item {
-	margin:18px 0 18px 0;
+	margin:0 0 18px 0;
 	font-size: 21px;
     text-transform: uppercase;
 	line-height: 21px;
@@ -115,7 +115,7 @@ h2 {
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 80px 280px 80px 280px;
+	padding: 60px 280px 40px 280px;
 }
 
 .feature-item-1,
@@ -124,7 +124,7 @@ h2 {
 	color:  #ffffff;
 	width: 290px;
 	text-align: center;
-	padding: 53px 55px 53px 55px;
+	padding: 53px 55px 71px 55px;
 	text-transform: uppercase;
 }
 
@@ -483,7 +483,7 @@ h2 {
 
 .filters-checkbox {
 	display: inline-block;
-	margin-right: 100px;
+	margin-right: 110px;
 }
 
 .filters-checkbox h2 {
@@ -502,7 +502,7 @@ h2 {
 
 .filters-price {
 	display: inline-block;
-	margin-left:330px;
+	margin-left:310px;
 	padding: 0 40px;
 	vertical-align: top;
 }
@@ -614,7 +614,7 @@ article .hotel {
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #81b3d2;
-	padding: 7px 16px 7px 16px;
+	padding: 5px 15px 5px 15px;
 }
 
 .details-btn:hover {
@@ -634,7 +634,7 @@ article .hotel {
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #766357;
-	padding: 7px 16px 7px 16px;
+	padding: 5px 15px 5px 15px;
 }
 
 .check-btn:hover{
@@ -659,7 +659,7 @@ article .hotel {
 .hot-type {
 	text-transform: uppercase;
     margin-top: 0px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 	font-size: 14px;
     line-height: 21px;
 }
