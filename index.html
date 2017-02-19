@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 	<div class="container">
@@ -27,7 +27,7 @@
 					height="352">
 			</div>
 			<div class="advantage-list">
-				<h1 class="title-text">Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<h1 class="title-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p>рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
 			</div>
 			<section class="item-img-1 clearfix">
@@ -91,30 +91,34 @@
 		<div class="map">
 			<form class="booking" method="get" action="#">	
 					<div class="input-space input-space-1">
-					<label for="arrival">Дата заезда: </label>
-					<input class="arrival-date" type="text" name="arrival-date" id="arrival">
-					<span class="calendar"></span>
+						<label for="arrival">Дата заезда: </label>
+						<input class="arrival-date" type="text" name="arrival-date" id="arrival">
+						<span class="calendar"></span>
 					</div>
 					<div class="input-space input-space-2">
-					<label for="departure">Дата выезда: </label>
-					<input class="departure-date" type="text" name="departure-date" id="departure">
-					<span class="calendar"></span>
+						<label for="departure">Дата выезда: </label>
+						<input class="departure-date" type="text" name="departure-date" id="departure">
+						<span class="calendar"></span>
 					</div>
 					<div class="input-space input-space-3">
-					<label for="adults">Взрослые: </label>
-					<!-- <button class="form-btn btn-minus1"></button> -->
-					<input class="adults" type="text" name="adults" id="adults">
-					<!-- <button class="form-btn btn-plus1"></button> -->
-					<label for="kids">Дети: </label>
-					<!-- <button class="form-btn btn-minus2"></button> -->
-					<input class="kids" type="text" name="kids" id="kids">
-					<!-- <button class="form-btn btn-plus2"></button> -->
+						<label for="adults">Взрослые: </label>
+							<div class="input-column">
+							<button class="form-btn btn-minus1"></button>
+							<input class="adults" type="text" name="adults" id="adults" value="2">
+							<button class="form-btn btn-plus1"></button>
+							</div>
+						<label for="kids">Дети: </label>
+							<div class="input-column">
+							<button class="form-btn btn-minus2"></button>
+							<input class="kids" type="text" name="kids" id="kids" value="0">
+							<button class="form-btn btn-plus2"></button>
+							</div>
 					</div>
 					<input class="submit" type="submit" value="Найти">
 			</form>
 			<footer class="main-footer">
 				<div class="hashtag column">
-					<a href="https://www.instagram.com/explore/tags/sedona/" target="_blank">#VIZITSEDONA</a>
+					<a href="https://www.instagram.com/explore/tags/sedona/" target="_blank">#VISITSEDONA</a>
 				</div>
 				<div class="social-media column">
 						<a class="social social-tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter"></a></li>
