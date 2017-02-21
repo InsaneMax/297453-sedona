@@ -12,15 +12,6 @@
 	margin: 0 auto;
 	box-shadow: 0 0 20px 0 #dedede;
 }
-.wrapper {
-	width: 1056px;
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 21px;
-	line-height: 26px;
-}
 
 .title-text {
 	width: 600px;
@@ -37,10 +28,6 @@ h1 {
 	margin-top: 0;
 }
 
-h2 {
-	font-size: 21px;
-	text-transform: uppercase;
-}
 .main-menu {
 	background-color: #ffffff;
 	position: relative;
@@ -56,20 +43,37 @@ h2 {
 	text-align: center;
 }
 
-
 .header-nav li {
-	width: 140px;
+	width: 120px;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
 	list-style: none;
-	padding: 15px 50px;
+	padding: 15px 15px;
 	display: inline-block;
 	vertical-align: top;
 	text-transform: uppercase;
 }
 
+.header-nav li:first-of-type {
+	margin-right: 50px;
+}
 
+.header-nav li:last-of-type {
+	margin-left: 45px;
+}
+
+.left-column-menu {
+	width: 395px;
+	margin-left: 43px;
+	float: left;
+}
+
+.right-column-menu {
+	width: 395px;
+	margin-right: 36px;
+	float: right;
+}
 
 .header-nav a {
 	text-decoration: none;
@@ -88,15 +92,15 @@ h2 {
 	color: #766357;
 }
 
-.header-nav .header-logo {
+.main-menu .header-logo {
 	height: 46px;
 	padding-top: 0;
 	padding-bottom: 0;
-	position: relative;
+	position: absolute;
 	top: 0px;
-	left: -5px; 
-
+	left: 530px; 
 } 
+
 
 .header-image {
     background: url("../img/img-1200/bg-white.png")bottom no-repeat,
@@ -153,26 +157,21 @@ h2 {
 	float:left;
 }
 
-.feature-img-1 {
-	background-image: url("../img/img-1200/image-1.jpg");
-	background-repeat: no-repeat;
+ .feature-img-1 {
 	float: right;
 	width: 800px;
-	min-height: 257px;
-	font-size: 0;
-}
+	height: 257px;
+	
+} 
 
 .feature-item-2 {
 	float: right;
 } 
 
 .feature-img-2 {
-	background-image: url("../img/img-1200/image-2.jpg");
-	background-repeat: no-repeat;
 	float: left;
 	width: 800px;
-	min-height: 257px;
-	font-size: 0;
+	height: 257px;
 }
 
 
@@ -233,9 +232,11 @@ h2 {
 	clear: both;
 }
 
-.best-advantage p {
+.best-advantage .best-choice {
 	margin: 0;
 	margin-bottom: 50px;
+	width: 400px;
+	padding: 0 120px 0 120px;
 }
 
 .booking-title {
@@ -277,6 +278,7 @@ h2 {
 
 .booking input {
 	width: 300px;
+	height: 26px;
 	background-color: #f2f2f2;
 	border: none;
 	font-size: 14px;
@@ -313,13 +315,13 @@ h2 {
 }
 
 .input-space-1 .calendar {
-	right: 64px;
-    top: 62px;
+	right: 66px;
+    top: 61px;
 }
 
 .input-space-2 .calendar {
-	right: 64px;
-    top: 129px;
+	right: 65px;
+    top: 128px;
 }
 
 .input-space .calendar:hover {
@@ -333,11 +335,14 @@ h2 {
 .booking .kids,
 .booking .adults {
 	width: 17px;
+	height: 26px;
+	/* line-height: 26px; */
 	padding: 5px 8px 5px 11px ;
 }
 
 .form-btn {
 	display: inline-block;
+	vertical-align: top;
 	width: 40px;
 	height: 35.9px;
 	border: none;
@@ -414,7 +419,8 @@ h2 {
 	outline: 2px solid #e5e5e5;
 }
 
-.booking .submit {
+.map .booking .submit {
+	height: 60px;
 	width: 100%;
 	padding: 16px 140px 16px 140px;
 	background-color: #81b3d2;
@@ -423,7 +429,7 @@ h2 {
 	text-align: center;
 	cursor: pointer;
 	margin: 0;
-	margin-top: 25px;
+	margin-top: 30px;
 }
 
 .booking .submit:hover {
@@ -473,11 +479,11 @@ h2 {
 
 .social {
 	display: inline-block;
+	vertical-align: middle;
 	width: 45px;
 	height: 48px;
 	background-color:  #81b3d2;
 	margin-right: 2px;
-	vertical-align: middle;
 	background-image: url("../img/img-1200/spritesheet.png");
 	background-repeat: no-repeat;
 }
@@ -578,7 +584,7 @@ h2 {
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 21px;
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .filters form {
@@ -598,12 +604,6 @@ h2 {
 	text-transform: uppercase;
 }
 
-.filters-menu b {
-	display: inline-block;
-	font-size: 21px;
-	line-height: 26px;
-	margin-top: 35px;
-}
 
 input[type="checkbox"] {
 	display: none;
@@ -636,7 +636,6 @@ input[type="checkbox"]:checked  + label::after {
 	position: absolute;
 	top: 0;
 	left: 0;
-
 }
 
 .filters-checkbox {
@@ -644,6 +643,10 @@ input[type="checkbox"]:checked  + label::after {
 	float: left;
 	width: 170px;
 	margin-right: 86px;
+}
+
+.filters-checkbox:first-child {
+	margin-left: 72px;
 }
 
 .filters-checkbox h2 {
@@ -657,6 +660,7 @@ input[type="checkbox"]:checked  + label::after {
 .filters-price {
 	display: block;
 	float: right;
+	margin-right: 72px;
 	width: 317px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -692,9 +696,9 @@ input[type="checkbox"]:checked  + label::after {
 
 .price-controls label {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	font-size: 14px;
-	line-height: 32px;
+	line-height: 28px;
 	cursor: pointer;
 }
 
@@ -703,8 +707,6 @@ input[type="checkbox"]:checked  + label::after {
 	width: 90px;
 	padding-left: 65px;
 }
-
-
 
 .price-controls input {
 	width: 50px;
@@ -779,6 +781,7 @@ input[type="checkbox"]:checked  + label::after {
 
 .sort-column-left {
 	float: left;
+	margin-left: 72px;
 	padding: 25px 0;
 }
 
@@ -791,11 +794,11 @@ input[type="checkbox"]:checked  + label::after {
 	margin: 0;
 	margin-right: 45px;
 	padding: 5px 0;
-	
 }
 
 .sort-column-right {
 	float: right;
+	margin-right: 72px;
 	padding: 35px 0 25px 0;
 	font-size: 0;
 }
@@ -855,6 +858,7 @@ input[type="checkbox"]:checked  + label::after {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 12px;
+	font-weight: normal;
 	line-height: 18px;
 	text-transform: uppercase;
 	margin: 0;
@@ -898,6 +902,7 @@ input[type="checkbox"]:checked  + label::after {
 .hotels .picture {
 	padding-top: 30px;
 	padding-bottom: 25px;
+	margin-left: 72px;
 }
 
 .picture {
@@ -914,6 +919,7 @@ input[type="checkbox"]:checked  + label::after {
 }
 
 .hot-link {
+	width: 760px;
 	display: block;
 	text-decoration: none;
 	color: #000;
@@ -921,6 +927,7 @@ input[type="checkbox"]:checked  + label::after {
 
 .rating {
 	float: right;
+	margin-right: 72px;
 }
 
 .rating span {
@@ -939,6 +946,7 @@ article .hotel {
 	text-transform: uppercase;
 	font-weight: bold;
 	display: inline-block;
+	vertical-align: middle;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #81b3d2;
@@ -960,6 +968,7 @@ article .hotel {
 	text-transform: uppercase;
 	font-weight: bold;
 	display: inline-block;
+	vertical-align: middle;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #766357;
@@ -992,6 +1001,20 @@ article .hotel {
 	font-size: 14px;
     line-height: 21px;
 }
+
+.amara .hot-price {
+	margin-left: 35px;
+}
+
+.desert .hot-price {
+	margin-left: 60px;
+}
+
+.diablo .hot-price {
+	margin-left: 17px;
+}
+
+
 
 .hot-link:hover {
 	color: #81b3d2;

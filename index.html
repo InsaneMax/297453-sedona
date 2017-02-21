@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	  <meta charset="utf-8">
+	  <title>HTML Academy: Седона</title>
+	  <link href="css/normalize.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 	<div class="container">
 		<header class="main-header">
 			<nav class="main-menu">
-				<ul class="header-nav">
-					<li><a class="active">Информация</a></li>
-					<li><a href="#">Фото и видео</a></li>
-					<li class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
-					height="70"></a></li>
-					<li><a href="#">Карта штата</a></li>
-					<li><a href="hotels.html">Гостиницы</a></li>
+				<ul class="header-nav clearfix">
+					<div class="left-column-menu">
+						<li><a class="active">Информация</a></li>
+						<li><a href="#">Фото и видео</a></li>
+					</div>
+					<!-- <li class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
+					height="70"></a></li> -->
+					<div class="right-column-menu">
+						<li><a href="#">Карта штата</a></li>
+						<li><a href="hotels.html">Гостиницы</a></li>
+					</div>
 				</ul>
+				<div class="header-logo"><a href="index.html"><img src="img/img-1200/logo-full.png" alt="Логотип сайта" width="138"
+					height="70"></a></div>
 			</nav>
 		</header>
 		<main>
@@ -37,7 +43,7 @@
 					<p class="paragraph">Седона-не атракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="feature-img-1">
-				<i>Настоящий город</i>
+					<img src="img/img-1200/image-1.jpg" width="800" height="256" alt="настоящий городок">
 				</div>
 			</section>
 			<section class="feature-list-1">
@@ -56,7 +62,7 @@
 			</section>
 			<section class="item-img-2 clearfix">
 				<div class="feature-img-2">
-				<i>Мост Дьявола</i>
+					<img src="img/img-1200/image-2.jpg" width="800" height="256" alt="мост дьявола">
 				</div>
 				<div class="feature-item-2">
 					<h2 class="title-item">Там есть мост дьявола</h2>
@@ -83,47 +89,47 @@
 			</section>
 			<div class="best-advantage">
 				<strong class="wanna-buy">Заинтересовались?</strong>
-				<p>Укажите предпологаемые даты поездки,<br>
+				<p class="best-choice">Укажите предпологаемые даты поездки,
 				и мы покажим лучшие предложения гостиниц в Седоне</p>
 				<h2 class="booking-title">Поиск гостиниц в Седоне</h2>
 			</div>
 		</main>
 		<div class="map">
 			<form class="booking" method="get" action="#">	
-					<div class="input-space input-space-1">
-						<label for="arrival">Дата заезда: </label>
-						<input class="arrival-date" type="text" name="arrival-date" id="arrival">
-						<span class="calendar"></span>
+				<div class="input-space input-space-1">
+					<label for="arrival">Дата заезда: </label>
+					<input class="arrival-date" type="text" name="arrival-date" id="arrival">
+					<span class="calendar"></span>
+				</div>
+				<div class="input-space input-space-2">
+					<label for="departure">Дата выезда: </label>
+					<input class="departure-date" type="text" name="departure-date" id="departure">
+					<span class="calendar"></span>
+				</div>
+				<div class="input-space input-space-3">
+					<label for="adults">Взрослые: </label>
+					<div class="input-column">
+						<button class="form-btn btn-minus1"></button>
+						<input class="adults" type="text" name="adults" id="adults" value="2">
+						<button class="form-btn btn-plus1"></button>
 					</div>
-					<div class="input-space input-space-2">
-						<label for="departure">Дата выезда: </label>
-						<input class="departure-date" type="text" name="departure-date" id="departure">
-						<span class="calendar"></span>
+					<label for="kids">Дети: </label>
+					<div class="input-column">
+						<button class="form-btn btn-minus2"></button>
+						<input class="kids" type="text" name="kids" id="kids" value="0">
+						<button class="form-btn btn-plus2"></button>
 					</div>
-					<div class="input-space input-space-3">
-						<label for="adults">Взрослые: </label>
-							<div class="input-column">
-							<button class="form-btn btn-minus1"></button>
-							<input class="adults" type="text" name="adults" id="adults" value="2">
-							<button class="form-btn btn-plus1"></button>
-							</div>
-						<label for="kids">Дети: </label>
-							<div class="input-column">
-							<button class="form-btn btn-minus2"></button>
-							<input class="kids" type="text" name="kids" id="kids" value="0">
-							<button class="form-btn btn-plus2"></button>
-							</div>
-					</div>
-					<input class="submit" type="submit" value="Найти">
+				</div>
+				<input class="submit" type="submit" value="Найти">
 			</form>
 			<footer class="main-footer">
 				<div class="hashtag column">
 					<a href="https://www.instagram.com/explore/tags/sedona/" target="_blank">#VISITSEDONA</a>
 				</div>
 				<div class="social-media column">
-						<a class="social social-tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter"></a>
-						<a class="social social-fb" href="https://www.facebook.com/htmlacademy" target="_blank" title="Facebook"></a>
-						<a class="social social-yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" title="YouTube"></a>
+					<a class="social social-tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter"></a>
+					<a class="social social-fb" href="https://www.facebook.com/htmlacademy" target="_blank" title="Facebook"></a>
+					<a class="social social-yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" title="YouTube"></a>
 				</div>
 				<div class="copyright column">
 					<span class="middle">website by</span><a class="academy" href="https://htmlacademy.ru/" target="_blank"></a>
