@@ -72,28 +72,6 @@
 	width: 115px;
 }
 
-
-
-/* .header-nav li:first-of-type {
-	margin-right: 50px;
-}
-
-.header-nav li:last-of-type {
-	margin-left: 45px;
-} */
-
-/* .left-column-menu {
-	width: 395px;
-	margin-left: 43px;
-	float: left;
-}
-
-.right-column-menu {
-	width: 395px;
-	margin-right: 36px;
-	float: right;
-} */
-
 .header-nav a {
 	text-decoration: none;
 	color: #000000;
@@ -133,7 +111,6 @@
     line-height: 21px;
 	margin: 0;
 	margin-bottom: 20px;
-	
 }
 
 .title-item {
@@ -180,7 +157,6 @@
 	float: right;
 	width: 800px;
 	height: 257px;
-	
 } 
 
 .feature-item-2 {
@@ -192,7 +168,6 @@
 	width: 800px;
 	height: 257px;
 }
-
 
 .feature-icon-1,
 .feature-icon-2,
@@ -355,7 +330,6 @@
 .booking .adults {
 	width: 17px;
 	height: 26px;
-	/* line-height: 26px; */
 	padding: 5px 8px 5px 11px ;
 }
 
@@ -372,6 +346,11 @@
 .input-column input {
 	display: inline-block;
 	vertical-align: top;
+}
+
+.booking .departure-input,
+.booking .arrival-input {
+	width: 110px;
 }
 
 .input-space-3 .input-column {
